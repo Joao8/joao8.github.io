@@ -20,21 +20,8 @@ body {
   font-family:'Bangers', cursive;; font-size: 14px;
   line-height: 1.6; color: #343c3c; background-color:rgba(243, 246, 251,0.3)}
 
-.jumbotron#city {
+.jumbotron {
   background-image: url("pedro-lastra-Nyvq2juw4_o-unsplash.jpg");
-  height: 100vh;
-  width:100vw;
-  margin:auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 0;
-
-}
-
-.jumbotron#nature {
-  background-image:none;
   height: 100vh;
   width:100vw;
   margin:auto;
@@ -88,20 +75,12 @@ body {
         </ul>
       </div>
     </nav>
-    <div class="jumbotron" id="city">
+    <div class="jumbotron">
         <div>
           <button id="lighterr" type="button" class="btn btn-light btn-sm m-2" data-toggle="button" aria-pressed="false" autocomplete="off">&Lacute;</button>
         <button id="darkerr" type="button" class="btn btn-dark btn-sm m-2" data-toggle="button" aria-pressed="false" autocomplete="off">&Dcaron;</button>
         </div>  
     </div>
-    <div class="jumbotron" id="nature">
-      <div>
-        <button id="lighterr" type="button" class="btn btn-light btn-sm m-2" data-toggle="button" aria-pressed="false" autocomplete="off">&Lacute;</button>
-      <button id="darkerr" type="button" class="btn btn-dark btn-sm m-2" data-toggle="button" aria-pressed="false" autocomplete="off">&Dcaron;</button>
-      </div>  
-  </div>
-
-
 
         <footer class="footer fixed-bottom">
           <div class="container text-center">
@@ -118,7 +97,7 @@ body {
     getSubmitButton.onclick = toggle;
 
     function toggle() {
-      document.getElementById("city").style.jumbotron = ".jumbotron#city";
+      document.getElementById("navyy").style.backgroundColor = "#f2efe6";
       return true;
     }
 
@@ -126,7 +105,7 @@ body {
     getSubmitButt.onclick = toggle1;
 
     function toggle1() {
-      document.getElementById("nature").style.jumbotron = ".jumbotron#nature";
+      document.getElementById("navyy").style.backgroundColor = "rgba(255,169,17, 0.5)";
       return true;
     }
 </script>
