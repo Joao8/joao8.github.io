@@ -45,7 +45,7 @@ body {
 #navyy{
   color:#264653;
   font-size: 1.2em;
-  background-color:rgba(255,255,255,0);
+  background-color:rgba(243, 246, 251,0.3)!important;
 }
 
 #navyy:hover{
@@ -68,9 +68,6 @@ body {
 </head>
 
 <body id ="body">
-    <button id="lighterr" type="button" class="btn btn-light btn-sm m-2" data-toggle="button" aria-pressed="false" autocomplete="off">&Lacute;</button>
-    <button id="darkerr" type="button" class="btn btn-dark btn-sm m-2" data-toggle="button" aria-pressed="false" autocomplete="off">&Dcaron;</button>
-
     <nav id ="navyy" class="navbar navbar-expand-lg navbar-light fixed-top">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,7 +92,10 @@ body {
     </nav>
     <div class="jumbotron">
         <h1  id ="goal" class="display-5 intro text-center "> Joao Neto <br> Portfolio</h1>
-         
+        <div>
+          <button id="lighterr" type="button" class="btn btn-light btn-sm m-2" data-toggle="button" aria-pressed="false" autocomplete="off">&Lacute;</button>
+        <button id="darkerr" type="button" class="btn btn-dark btn-sm m-2" data-toggle="button" aria-pressed="false" autocomplete="off">&Dcaron;</button>
+        </div>  
     </div>
     
 
@@ -117,7 +117,6 @@ body {
 
     function toggle() {
       document.getElementById("goal").style.backgroundColor = "#f2efe6";
-      document.getElementById("goal1").style.backgroundColor = "#f2efe6";
       document.getElementById("john").style.backgroundColor = "orange";
       return true;
     }
@@ -127,7 +126,6 @@ body {
 
     function toggle1() {
       document.getElementById("goal").style.backgroundColor = "rgba(255,169,17, 0.5)";
-      document.getElementById("goal1").style.backgroundColor = "rgba(255,169,17, 0.5)";
       document.getElementById("john").style.backgroundColor = "rgba(128,218,86, 0.7)";
       return true;
     }
