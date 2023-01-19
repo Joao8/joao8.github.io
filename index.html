@@ -17,12 +17,9 @@ html{max-width: 100%; overflow-x: hidden;}/*important*/
 body{max-width: 100%; overflow-x: hidden;}
 .headerr{height:600px;}
 .jumbotron {background: url('img/john.jpg') no-repeat center center fixed;color:#f5f5f5; background-size: cover;
- height: 700px; width:cover;  }
-
- .btn-circle{color: #bb9d52; opacity: 0.1; outline-color: none; border-radius: 55%;}
- .btn-circle:hover{opacity:1; transform: scale(1.2);}
- .btn-outline-primary {color: #bb9d52!important;}
- .btn-outline-primary:hover {background-color: #bb9d52!important;color:#f5f5f5!important;}
+ height: 700px; width:cover; }
+.btn-outline-primary {color: #bb9d52!important;}
+.btn-outline-primary:hover {background-color: #bb9d52!important;color:#f5f5f5!important;}
 .card-img{padding: 10px; width:30rem; height:auto;border: none;}
 .bodies{color:#f5f5f5; text-align: center; margin-top:15px;}
 .divided{width:100vw;height:auto; opacity:0.5;}
@@ -110,7 +107,7 @@ body{max-width: 100%; overflow-x: hidden;}
       </div>
     </div>
 
-    <div class"row col-12 bg-dark">
+    <div class = "row col-12 bg-dark">
       <img src="img/div.jpg" class="img-responsive divided" alt="...">
     </div>
 
@@ -155,7 +152,7 @@ body{max-width: 100%; overflow-x: hidden;}
       </div>
     </div>
   </div>
-  <div class"row col-12 ">
+  <div class = "row col-12 ">
     <img src="img/div1.jpg" class="img-responsive divided" alt="...">
   </div>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center " >
@@ -208,7 +205,7 @@ body{max-width: 100%; overflow-x: hidden;}
       </div>
       </div>
       <!--BUTTON TO TOP-->
-      <button type="button" class=" btn-circle fixed-bottom" onclick="topFunction()" title="Go to top" >&Uarr;</button>
+      <button id ="myBtn" type="button" class="fixed-bottom btn btn-warning" onclick="topFunction()" title="Go to top" >&Uarr;</button>
       <!--BUTTON TO TOP-->
       <!-- Footer -->
       <!-- Site footer -->
@@ -222,24 +219,27 @@ body{max-width: 100%; overflow-x: hidden;}
 
     <script src="bootstrap.bundle.min.js"></script>
 
+<!--BUTTON TO TOP script-->
     <script>
 
     //Get the button
     var mybutton = document.getElementById("myBtn");
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+   // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
     }
+  }
 
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+   </script> 
+   <!--BUTTON TO TOP script-->
